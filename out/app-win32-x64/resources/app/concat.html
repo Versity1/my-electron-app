@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senates Voting App</title>
+    <link rel="stylesheet" href="vote.css">
+    <script src="vote.js"></script>
+</head>
+<body>
+   <h1>9th Senates Vote Result</h1>
+   
+   <table style="width:100%">
+    <tr>
+        <td style="font-weight: bold;">Votes For</td>
+        <td style="font-weight: bold;">Votes Against</td>
+    </tr>
+   
+    <tr style="height:80px">
+        <td id="count-for" >Vote Count: --</td>
+        <td id="count-against">Vote Count: --</td>
+    </tr>
+    <tr style="height:80px">
+        <td style="font-weight: bold;" id="percfor">% Vote Count: --</td>
+        <td style="font-weight: bold;" id="perag">% Vote Count: --</td>
+    </tr>
+    <tr>
+        <td><h4 id="total-votes">TOTAL VOTE CAST:  00.00</h4></td>
+        <td><h4>Thanks for voting</h4></td>
+    </tr>
+   </table>
+   <br>
+   <button id="votefor-btn" onclick="votef()">VOTE FOR</button>
+   <button id="voteagainst-btn" onclick="voteg()">VOTE AGAINST</button>
+   <button id="voteagainst-btn" onclick="votet()">CALCULATE</button>
+   <br>
+   <button id="votefor-btn" onclick="votefp()">VOTE FOR (%)</button>
+   <button id="voteagainst-btn" onclick="votegp()">VOTE AGAINST (%)</button>
+</body>
+</html>
